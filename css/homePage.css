@@ -1,0 +1,145 @@
+/* #0065a3  1.png*/
+
+/* #6f8ba1 2.png */
+
+/* #152934 3.png main */
+
+/* #84d0e9 3.png text */
+
+/* ***************** CAROUSEL AND SECTION1 CONTENT *********************** */
+
+.carousel-inner img {
+	height: auto;
+	width: 100%;
+}
+
+.section1 .carousel-inner img {
+	height: 78vh;
+}
+.section1 .carousel-inner {
+	position: relative;
+}
+/* .section1 .carousel-inner .carousel-item::after{
+       content: "";
+       width: 100%;
+       height: 100%;
+       position: absolute;
+       top: 0;
+       left: 0;
+       background: linear-gradient(rgba(0, 0, 255, 0.308), rgba(0, 0, 255, 0.329));
+   } */
+
+.section1 .section1-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	z-index: 1;
+	text-align: center;
+}
+
+/* ***************** START SECTION2 *********************** */
+
+.section2 .bottom-part {
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+.section2 .bottom-part .rounded .info-box .card a {
+	text-decoration: none;
+}
+
+.section2 .bottom-part .rounded .info-box .card a:hover h3 {
+	color: #110f77;
+	transform: scale(1.1);
+}
+
+.section2 .text-box {
+	position: absolute;
+	font-size: 23px;
+	top: 30px;
+	left: 30px;
+	color: #110f77;
+	transform: translateZ(80px);
+	text-shadow: 5px 5px 5px #303047;
+}
+
+.section2 .info-box .card img {
+	height: 350px;
+	width: 100%;
+	border-radius: inherit;
+}
+.anycard {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	/* background: coral; */
+	transform-style: preserve-3d;
+	border-radius: 20px;
+}
+
+/* ***************** START SECTION 3 *********************** */
+
+.section3 {
+	background-color: #6f8ba1;
+	height: auto;
+}
+
+.section3 .img-elements img {
+	width: 100%;
+	height: 200px;
+	transition: 1.5s;
+	overflow: hidden;
+}
+
+.section3 .img-elements {
+	position: relative;
+	overflow: hidden;
+}
+
+.section3 .img-elements:hover img {
+	transform: scale(1.5);
+}
+
+.section3 .img-elements::after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(transparent, rgba(255, 255, 255, 0.3));
+	position: absolute;
+	top: -100%;
+	right: -100%;
+	z-index: 10;
+	transform: rotate(45deg) scale(1.5);
+	transition: 0.5s;
+}
+
+.section3 .img-elements:hover::after {
+	top: 100%;
+	right: 100%;
+}
+
+/* ***************** START SECTION 4 *********************** */
+
+.section4 .divided-line {
+	height: 5px;
+	border: 2px solid #156dac;
+	margin-top: 30px;
+}
+
+/* ***************** START SECTION 6 *********************** */
+
+.section6 .contact-box {
+	background-color: #fcfcfc;
+	border: 2px solid lightgray;
+}
+
+.section6 .form-contact-us input {
+	background-color: #fcfcfc;
+}
+
+.section6 #inputMassage {
+	height: 100px;
+}

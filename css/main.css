@@ -1,0 +1,252 @@
+@font-face {
+    font-family: "Raleway-Light";
+    src: url(../font/Raleway-Light.woff2) format("woff2"), url(../font/Raleway-Light.woff) format("woff"), url(../font/Raleway-Light.ttf) format("truetype");
+}
+
+
+/* ***************** GENERAL CLASSES *********************** */
+
+body {
+    font-family: "Raleway-Light" !important;
+    text-transform: capitalize;
+}
+
+.a-link {
+    color: #627d92 !important;
+}
+
+.nav-item .active {
+    /* color: #565c63 !important; */
+    color: #3740db !important;
+    /* color: #444ac7 !important; */
+    /* color: #0056b3 !important; */
+}
+
+.btn {
+    background-color: #2c3192 !important;
+    /* background-color: #0065a3 !important; */
+    color: white !important;
+}
+
+.box {
+    height: auto !important;
+    text-transform: capitalize;
+    overflow: hidden;
+    margin: 4%;
+    color: white;
+}
+
+.ribbon {
+    width: 100%;
+    height: auto;
+    /* background-color: #0065a3; */
+    background-color: #2c3192;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.line {
+    width: 140px;
+    height: 5px;
+    background-color: #6f8ba1;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.check-box {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.checkbox-elements {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.checkbox-elements .checkbox-text {
+    margin-top: -6px;
+    padding-left: 10px;
+}
+
+.icon-text {
+    padding: 6px;
+}
+
+.text {
+    margin-left: 10px;
+    margin-top: -4px;
+}
+
+.page-info {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.page-info .image-info {
+    background: linear-gradient(rgba(241, 237, 237, 0.363), rgba(241, 237, 237, 0.363)), url(../img/PowerStation.jpg) no-repeat center center;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    transition: 2s;
+    /* display: block; */
+}
+
+.page-info .image-info:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/PowerStation.jpg)no-repeat center center;
+    background-size: cover;
+    transform: scale(1.2);
+    color: white;
+}
+
+.page-info .image-info h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -95%);
+    /* color: white; */
+    z-index: 1;
+    text-align: center;
+}
+
+.page-info .change-page {
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(238, 221, 221, 0.753);
+    z-index: 1;
+}
+
+.info-box {
+    /* margin: 4%; */
+    text-align: center;
+}
+
+.products-card {
+    border: none !important;
+}
+
+
+/****************** HEADER ************************/
+
+header {
+    width: 100%;
+    height: 110px;
+    position: relative;
+    }
+
+.navinner {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+	box-shadow: 3px 1px 6px 1px lightgrey;
+}
+.navbar .navbar-brand img {
+    width: 300px;
+   
+}
+
+ .animatzoomout {
+    animation: zoomout 1s forwards;
+ }
+ .animatzoomin {
+    animation: zoomin 1s forwards;
+ }
+
+@keyframes zoomout {
+    0% {
+     
+      width: 300px;
+      
+    }
+   100% {
+      width: 200px;
+      
+    }
+  }
+  @keyframes zoomin {
+    0% {
+     
+      width: 200px;
+     
+    }
+   100% {
+      width: 300px;
+     
+    }
+  }
+
+
+.nav-link {
+    color: #010608 !important;
+}
+
+nav ul a:hover,
+nav ul a .active {
+    color: darkblue;
+}
+
+
+.design-section1 {
+    height: auto;
+}
+
+.section2 .top-part img {
+    width: 300px;
+	margin-bottom:30px;
+}
+.section2 .description {
+    font-size: 20px;
+}
+form #errormessage{
+    color:red;
+    width: 100%;
+    height: 30px;
+     margin-top: 10px; 
+}
+
+/* ***************** START FOOTER *********************** */
+
+.footer {
+    /* background-color: #32346a; */
+    background-color: #2c3192;
+    width: 100%;
+    height: auto;
+}
+
+.footer img {
+    height: 250px;
+    width: 200px;
+}
+
+.footer-text {
+    color: white;
+    line-height: 60px;
+    text-align: center;
+}
+
+.copyright {
+    width: 100%;
+    /* background-color: #111e25; */
+    background-color: #1a1d57;
+    height: 60px;
+}
+
+#card-size {
+    height: 371px;
+}
+#card-size1{
+	 height: 401px;
+}

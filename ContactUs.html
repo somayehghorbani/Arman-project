@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact Us</title>
+    <link rel="icon" href="img/armanlogo2021.jpeg" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/homePage.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- icon -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>  
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- icon -->
+    <link rel="stylesheet" href="bootstrap-4.6.0/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- ######################## header ############################ -->
+    <header>
+      <!-- ************* MENU *********** -->
+<div class="navinner">
+    <nav class="navbar navbar-expand-lg navbar-light p-4"  >
+    <a href="./Home.html" class="navbar-brand">
+        <img src="img/مقره سازی آرمان.jpg" class="header-logo"></img>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div  class=" collapse navbar-collapse text-center" id="collapsibleNavbar">
+        <ul class="navbar-nav" >
+            
+            <li class="nav-item ">
+                <a class=" nav-link font-weight-bold" href="./Design.html">Design</a>
+            </li>
+            <li class="nav-item ">
+                <a class=" nav-link font-weight-bold" href="#">Manufacturing</a>
+            </li>
+            <li class="nav-item ">
+                <a class=" nav-link font-weight-bold"  href="./Products.html">Products</a>
+            </li>
+            <li class="nav-item ">
+                <a class="  nav-link font-weight-bold" href="./Catalog.html">Catalogs</a>
+            </li>
+            <li class="nav-item ">
+                <a class=" nav-link font-weight-bold" href="#">Research and development</a>
+            </li>
+            <li class="nav-item ">
+                <a class="  nav-link font-weight-bold" href="./AboutUs.html">About us</a>
+            </li>
+            <li class="nav-item">
+                <a class="active nav-link font-weight-bold" href="./ContactUs.html">Contact us</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+</div> 
+    </header>
+    <!-- ######################## BETWEEN TWO SECTION ############################ -->
+    <div class="page-info">
+        <div class="image-info">
+            <div class="top-img"></div>
+            <h2 class="design font-weight-bold text-center">Contact us</h2>
+        </div>
+        <div class="change-page">
+            <a href="./index.html" class="font-weight-bold a-link">Home</a> >> <span class="font-weight-bold">Contact
+                us</span>
+        </div>
+    </div>
+    <!-- ######################## FROM INDEX PAGE CONTACT FORM ############################ -->
+    <div class="section6">
+        <div class="container">
+            <div class="row my-5">
+                <!-- ************* ADDRESS *********** -->
+                <div class="col-sm-6 col-md-4 contact-box">
+                    <h4 class="text-center pt-4">ARMAN INSULATORS</h4>
+                    <div class="line text-center"></div>
+                    <div class="contact-info pt-4 font-weight-bold">
+                        <div class="d-flex icon-text">
+                            <i class="fa fa-map-marker"></i>
+                            <div class="text text-dark">No.1 , Babolhavaej Dead-End, Sedigh Alley, Gholhak Intersection, Shariaty Street, Tehran, Iran</div>
+                        </div>
+                        <div class="d-flex icon-text">
+                            <i class="fa fa-phone-square"></i>
+                            <div class="text text-dark">+98 21 26415041 & 26415042</div>
+                        </div>
+                        <div class="d-flex icon-text">
+                            <i class="fa fa-fax"></i>
+                            <div class="text text-dark"> +98 21 26415043</div>
+                        </div>
+                        <div class="d-flex icon-text">
+                            <i class="fa fa-envelope"></i>
+                            <a class="text text-dark">info@arman-insulators.com</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ************* BOX FOR CONTACT *********** -->
+                <form  class="p-5 form-contact-us col-md-8 col-sm-6" method="POST" >
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Name">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" id="Business" placeholder="Business">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="email" name="email" class="form-control" id="email" placeholder="E-mail">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="number" class="form-control" id="phone" placeholder="Telephon">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <input type="text" row="4" class="form-control" id="message" name="massage" placeholder="Massage">
+                        </div>
+                    </div>
+
+                    <input type="button" id="submit" name="submit" class="col-md-12 btn"  value="SEND">
+                    <div id="errormessage" ></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ######################## FOOTER ############################ -->
+    <footer >
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- ************* LOGO *********** -->
+                    <div class="box col-sm-4 col-md-4 col-lg-3 text-center">
+                        <!-- <img class="logo" src="./img/MSALogoCentral.jpg"></img> -->
+                        <img class="logo" src="./img/arman2.jpg"></img>
+                    </div>
+                    <!-- ************* CONTACT *********** -->
+                    <div class="box col-sm-6 col-md-5 col-lg-3">
+                        <div class="contact-info">
+                            <h4>contact</h4>
+                            <div class="d-flex icon-text">
+                                <i class="fa fa-map-marker"></i>
+                                <div class="text text-light">No.1 , Babolhavaej Dead-End, Sedigh Alley, Gholhak Intersection, Shariaty Street, Tehran, Iran</div>
+                            </div>
+                            <div class="d-flex icon-text">
+                                <i class="fa fa-phone-square"></i>
+                                <div class="text text-light">+98 21 26415041 & 26415042</div>
+                            </div>
+                            <div class="d-flex icon-text">
+                                <i class="fa fa-fax"></i>
+                                <div class="text text-light">+98 21 26415043</div>
+                            </div>
+                            <div class="d-flex icon-text">
+                                <i class="fa fa-envelope"></i>
+                                <a class="text text-light">info@arman-insulators.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ************* PRODUCTS *********** -->
+                    <div class="box col-sm-10 col-md-9 col-lg-3">
+                        <h4>products</h4>
+                        <div class="products-footer">
+                            <ul>
+                                <li>
+                                    <a href="#" class="text-light">Suspension - Tension
+                                        Composite Insulators for
+                                        Overhead Transmission Lines</a>
+                                </li>
+                                <li>
+                                    <a href=" " class="text-light">Inter-phase Spacer Insulators for Overhead
+                                        Transmission Lines</a>
+                                </li>
+                                <li>
+                                    <a href=" " class="text-light">Cross-Arm Insulators for Overhead Transmission
+                                        Lines</a>
+                                </li>
+                                <li>
+                                    <a href=" " class="text-light">Post Insulators for High Voltage Substations</a>
+                                </li>
+                                <li>
+                                    <a href=" " class="text-light">Medium Voltage Insulators for Electric Distribution
+                                        Networks</a>
+                                </li>
+                                <li>
+                                    <a href=" " class="text-light">Electric Railway Insulators for Overhead Catenary
+                                        Systems</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ************* COPYRIGHT *********** -->
+            <div class="copyright">
+                <div class="footer-text">ARMAN<span>&#169</span>2021 ALL RESERVED</div>
+            </div>
+          </div>   
+    </footer>
+
+    <!-- ######################## SCRIPT ############################ -->
+<script src="lib/jQuery/jquery-3.6.0.min.js"></script>
+<script src="lib/popper/popper.min.js"></script>
+<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Raleway-Light';
+  src: url('/path-to/Raleway-Light.woff2') format('woff2'),
+       url('/path-to/Raleway-Light.woff') format('woff'),
+       url('/path-to/Raleway-Light.ttf')  format('truetype');
+}
+
+body {
+  font-family: 'Raleway-Light', sans-serif;
+}
