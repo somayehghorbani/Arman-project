@@ -1,0 +1,20 @@
+.popup {
+	background-color: #fff;
+	border: 1px solid #000;
+	border-radius: 7px;
+	position: fixed;
+	left: 50%;
+	top: 350px;
+	transform: translateX(-50%);
+	visibility: hidden;
+	text-align: center;
+	padding: 20px;
+	color: black;
+	font-weight: bold;
+
+}
+
+.popup span.popup-close::after {
+	content: "\00d7";
+	float: right;
+}

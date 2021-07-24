@@ -1,5 +1,5 @@
-$(function() {
-	$(window).scroll(function() {
+$(function () {
+	$(window).scroll(function () {
 		var $h = $(window).scrollTop();
 
 		if ($h > 175) {
@@ -10,8 +10,8 @@ $(function() {
 		}
 	});
 });
-$(function() {
-	$(window).scroll(function() {
+$(function () {
+	$(window).scroll(function () {
 		var $h = $(window).scrollTop();
 
 		if ($h < 175) {
@@ -47,7 +47,7 @@ $('#submit').on('click', function validateForm() {
 			Host: 'smtp.gmail.com',
 			Username: 'arman.insulators2020@gmail.com',
 			Password: 'arman123456',
-			To: 'info@Arman-Insulators.com',
+			To: 'sghkkdoa2@gmail.com',
 			From: 'arman.insulators2020@gmail.com',
 			Subject: 'Send Message',
 			Body: `Name :${document.getElementById('name').value} ;<br>
@@ -57,17 +57,55 @@ $('#submit').on('click', function validateForm() {
     Message :${document.getElementById('message').value} ;`,
 			document
 		}).then(
-			(error.innerHTML = 'Message sent')
+			// (error.innerHTML = 'Message sent')
 
 			// location.reload()
 		);
+
 	}
+	modal.style.visibility = "visible";
+	modal.style.cursor = "pointer"
 	document.getElementById('name').value = '';
 	document.getElementById('Business').value = '';
 	document.getElementById('email').value = '';
 	document.getElementById('phone').value = '';
 	document.getElementById('message').value = '';
+	document.getElementById('errormessage').innerHTML = '';
 });
+// Get the modal
+var modal = document.getElementById("popup");
+
+// Get the button that opens the modal
+var btn = document.getElementById("submit");
+
+// Get the <span> element that closes the modal
+var spanclose = document.getElementById("spanclose");
+// Get the <span> element that closes the modal
+var buttomclose = document.getElementById("buttomclose");
+ 
+
+// When the user clicks on <span> (x), close the modal
+spanclose.onclick = function () {
+	modal.style.visibility = "hidden";
+
+}
+// When the user clicks on buttom, close the modal
+buttomclose.onclick = function () {
+	modal.style.visibility = "hidden";
+
+}
+
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+	if (event.target == modal) {
+		modal.style.visibility = "hidden";
+	}
+}
+
+
+
+
 
 VanillaTilt.init(document.querySelectorAll('.anycard'), {
 	max: 8,

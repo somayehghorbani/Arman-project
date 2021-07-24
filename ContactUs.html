@@ -9,8 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/homePage.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/contact.css">
     <!-- icon -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>  
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://code.jquery.com/jquery-latest.js"></script>
@@ -21,45 +22,46 @@
 </head>
 
 <body>
+
     <!-- ######################## header ############################ -->
     <header>
-      <!-- ************* MENU *********** -->
-<div class="navinner">
-    <nav class="navbar navbar-expand-lg navbar-light p-4"  >
-    <a href="./Home.html" class="navbar-brand">
-        <img src="img/مقره سازی آرمان.jpg" class="header-logo"></img>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div  class=" collapse navbar-collapse text-center" id="collapsibleNavbar">
-        <ul class="navbar-nav" >
-            
-            <li class="nav-item ">
-                <a class=" nav-link font-weight-bold" href="./Design.html">Design</a>
-            </li>
-            <li class="nav-item ">
-                <a class=" nav-link font-weight-bold" href="#">Manufacturing</a>
-            </li>
-            <li class="nav-item ">
-                <a class=" nav-link font-weight-bold"  href="./Products.html">Products</a>
-            </li>
-            <li class="nav-item ">
-                <a class="  nav-link font-weight-bold" href="./Catalog.html">Catalogs</a>
-            </li>
-            <li class="nav-item ">
-                <a class=" nav-link font-weight-bold" href="#">Research and development</a>
-            </li>
-            <li class="nav-item ">
-                <a class="  nav-link font-weight-bold" href="./AboutUs.html">About us</a>
-            </li>
-            <li class="nav-item">
-                <a class="active nav-link font-weight-bold" href="./ContactUs.html">Contact us</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-</div> 
+        <!-- ************* MENU *********** -->
+        <div class="navinner">
+            <nav class="navbar navbar-expand-lg navbar-light p-4">
+                <a href="./Home.html" class="navbar-brand">
+                    <img src="img/مقره سازی آرمان.jpg" class="header-logo"></img>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class=" collapse navbar-collapse text-center" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item ">
+                            <a class=" nav-link font-weight-bold" href="./Design.html">Design</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class=" nav-link font-weight-bold" href="#">Manufacturing</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class=" nav-link font-weight-bold" href="./Products.html">Products</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="  nav-link font-weight-bold" href="./Catalog.html">Catalogs</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class=" nav-link font-weight-bold" href="#">Research and development</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="  nav-link font-weight-bold" href="./AboutUs.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="active nav-link font-weight-bold" href="./ContactUs.html">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
     <!-- ######################## BETWEEN TWO SECTION ############################ -->
     <div class="page-info">
@@ -83,7 +85,8 @@
                     <div class="contact-info pt-4 font-weight-bold">
                         <div class="d-flex icon-text">
                             <i class="fa fa-map-marker"></i>
-                            <div class="text text-dark">No.1 , Babolhavaej Dead-End, Sedigh Alley, Gholhak Intersection, Shariaty Street, Tehran, Iran</div>
+                            <div class="text text-dark">No.1 , Babolhavaej Dead-End, Sedigh Alley, Gholhak Intersection,
+                                Shariaty Street, Tehran, Iran</div>
                         </div>
                         <div class="d-flex icon-text">
                             <i class="fa fa-phone-square"></i>
@@ -100,7 +103,7 @@
                     </div>
                 </div>
                 <!-- ************* BOX FOR CONTACT *********** -->
-                <form  class="p-5 form-contact-us col-md-8 col-sm-6" method="POST" >
+                <form class="p-5 form-contact-us col-md-8 col-sm-6" method="POST">
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <input type="text" name="name" class="form-control" id="name" placeholder="Name">
@@ -119,18 +122,28 @@
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-12">
-                            <input type="text" row="4" class="form-control" id="message" name="massage" placeholder="Massage">
+                            <input type="text" row="4" class="form-control" id="message" name="massage"
+                                placeholder="Massage">
                         </div>
                     </div>
 
-                    <input type="button" id="submit" name="submit" class="col-md-12 btn"  value="SEND">
-                    <div id="errormessage" ></div>
+                    <input type="button" id="submit" name="submit" class="popup-btn col-md-12 btn" value="SEND">
+                    <div class="popup show" id="popup">
+                        <span class="popup-close" id="spanclose"></span>
+                        <p class="">Your information was sent successfully</p>
+                        <p>Thank you for your contact</p>
+                        <button id="buttomclose" class="popup-close btn btn-primary">Close</button>
+                    </div>
+                    <div id="errormessage"></div>
                 </form>
             </div>
         </div>
     </div>
+
+
+
     <!-- ######################## FOOTER ############################ -->
-    <footer >
+    <footer>
         <div class="footer">
             <div class="container-fluid">
                 <div class="row">
@@ -145,7 +158,8 @@
                             <h4>contact</h4>
                             <div class="d-flex icon-text">
                                 <i class="fa fa-map-marker"></i>
-                                <div class="text text-light">No.1 , Babolhavaej Dead-End, Sedigh Alley, Gholhak Intersection, Shariaty Street, Tehran, Iran</div>
+                                <div class="text text-light">No.1 , Babolhavaej Dead-End, Sedigh Alley, Gholhak
+                                    Intersection, Shariaty Street, Tehran, Iran</div>
                             </div>
                             <div class="d-flex icon-text">
                                 <i class="fa fa-phone-square"></i>
@@ -199,14 +213,16 @@
             <div class="copyright">
                 <div class="footer-text">ARMAN<span>&#169</span>2021 ALL RESERVED</div>
             </div>
-          </div>   
+        </div>
     </footer>
 
     <!-- ######################## SCRIPT ############################ -->
-<script src="lib/jQuery/jquery-3.6.0.min.js"></script>
-<script src="lib/popper/popper.min.js"></script>
-<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="script.js"></script>
+    <script src="lib/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="lib/popper/popper.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.min.js"></script>
+
 </body>
 
 </html>
