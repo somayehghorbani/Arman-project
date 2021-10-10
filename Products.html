@@ -7,69 +7,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
+
     <link rel="stylesheet" href="./css/homePage.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/quality.css">
+    <link rel="stylesheet" href="./css/products.css">
     <!-- icon -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- icon -->
     <link rel="stylesheet" href="bootstrap-4.6.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/products.css">
+
 </head>
 
 <body>
     <!-- ######################## HEADER ############################ -->
-    <header >
-       <!-- ************* MENU *********** -->
-<div class="navinner">
-    <nav class="navbar navbar-expand-lg navbar-light p-4"  >
-    <a href="./Home.html" class="navbar-brand">
-        <img src="img/مقره سازی آرمان.jpg" class="header-logo"></img>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div  class=" collapse navbar-collapse text-center" id="collapsibleNavbar">
-        <ul class="navbar-nav" id="myNav">
-            
-            <li class="nav-item ">
-                <a class=" nav-link font-weight-bold" href="./Design.html">Design</a>
-            </li>
-            <li class="nav-item ">
-                <a class=" nav-link font-weight-bold" href="#">Manufacturing</a>
-            </li>
-            <li class="nav-item ">
-                <a class="active nav-link font-weight-bold"  href="./Products.html">Products</a>
-            </li>
-            <li class="nav-item ">
-                <a class="  nav-link font-weight-bold" href="./Catalog.html">Catalogs</a>
-            </li>
-            <li class="nav-item ">
-                <a class=" nav-link font-weight-bold" href="#">Research and development</a>
-            </li>
-            <li class="nav-item ">
-                <a class="  nav-link font-weight-bold" href="./AboutUs.html">About us</a>
-            </li>
-            <li class="nav-item">
-                <a class=" nav-link font-weight-bold" href="./ContactUs.html">Contact us</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-</div>
+    <header>
+        <!-- ************* MENU *********** -->
+        <div class="navinner">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <a href="./index.html" class="navbar-brand">
+                    <img src="img/withearman.jpg" class="header-logo"></img>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class=" collapse navbar-collapse text-center" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+
+
+                        <li class="nav-item ">
+                            <a class=" nav-link font-weight-bold" href="./Products.html">Products</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class=" nav-link font-weight-bold" href="./quality.html">Quality</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="  nav-link font-weight-bold" href="./Catalog.html">Catalogs</a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="  nav-link font-weight-bold" href="./AboutUs.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class=" nav-link font-weight-bold" href="./ContactUs.html">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+
+
+
     </header>
     <main>
-    <!-- ######################## BETWEEN SECTION ############################ -->
-    <div class="page-info">
-        <div class="image-info">
-            <div class="top-img"></div>
-            <h2 class="design font-weight-bold text-center pt-5">Products</h2>
+        <!-- ######################## BETWEEN SECTION ############################ -->
+        <div class="page-info">
+            <div class="image-info">
+                <div class="top-img"></div>
+                <h2 class="design font-weight-bold text-center pt-5">Products</h2>
+            </div>
+            <div class="change-page">
+                <a href="./index.html" class="font-weight-bold a-link">Home</a> >> <span
+                    class="font-weight-bold">Products</span>
+            </div>
         </div>
-        <div class="change-page">
-            <a href="./Home.html" class="font-weight-bold a-link">Home</a> >> <span class="font-weight-bold">Products</span>
-        </div>
-    </div>
-    
+
         <!-- ######################## START SECTION 2 ############################ -->
         <div class="section2">
             <div class="container">
@@ -77,17 +83,19 @@
                 <div class="top-part pt-5">
                     <div class="row text-center">
                         <div class="sec2-left-box col-sm-12 col-md-12 mb-4">
-                            <img src="./img/مقره سازی آرمان.jpg" alt=" ">
-                            <div class="description">We are producing different types of composite insulators from 20Kv up to 400 kV. Our main products are specified below:
+                            <img src="./img/withearman.jpg" alt=" ">
+                            <div class="description">We are producing different types of composite insulators from 20Kv
+                                up to 400 kV. Our main products are specified below:
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <!-- ************* first column *********** -->
-                        <div class="check-box text-dark col-sm-12 col-md-6">
+                        <div class="check-box  col-sm-12 col-md-6">
                             <div class="d-flex checkbox-elements">
                                 <i class="check-icon fa fa-check-circle"></i>
-                                <div class="checkbox-text">Suspension - Tension Composite Insulators for Overhead Transmission Lines</div>
+                                <div class="checkbox-text">Suspension - Tension Composite Insulators for Overhead
+                                    Transmission Lines</div>
                             </div>
                             <div class="d-flex checkbox-elements">
                                 <i class="check-icon fa fa-check-circle"></i>
@@ -101,7 +109,7 @@
                         </div>
                         <!-- ************* second column *********** -->
                         <!-- <div class="sec2-left-box col-sm-6 col-md-6 mb-4"> -->
-                        <div class="check-box text-dark col-sm-12 col-md-6">
+                        <div class="check-box  col-sm-12 col-md-6">
                             <div class="d-flex checkbox-elements">
                                 <i class="check-icon fa fa-check-circle"></i>
                                 <div class="checkbox-text">Post Insulators for High Voltage Substations</div>
@@ -118,80 +126,105 @@
                             </div>
                         </div>
                     </div>
-             
 
-                <!-- ************* bottom part of section 2 *********** -->
-                <div class="bottom-part">
-                     <div class="sec2-header my-5 text-center">
-                        <h4 class="font-weight-bold">OUR PRODUCTS</h4>
-                        <div class="line text-center"></div>
+
+                    <!-- ************* bottom part of section 2 *********** -->
+                    <div class="bottom-part">
+                        <div class="sec2-header my-5 text-center">
+                            <h4 class="font-weight-bold">OUR PRODUCTS</h4>
+                            <div class="line text-center"></div>
+                        </div>
+                        <!-- ************* box of products *********** -->
+                        <div class="container">
+                            <div class="card">
+                                <a href="./LinePostInsulator.html" class="imgBx">
+                                    <img src="img-product/LinePostInsulator.jpg" alt="1">
+
+                                    <div class="content">
+                                        <div class="contentBx">
+                                            <h3>Line Post Insulator <br><span>Post Insulators for High Voltage
+                                                    Substations</span></h3>
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="" class="imgBx">
+                                    <img src="img-product/SpacerInsulators.jpg" alt="1">
+
+                                    <div class="content">
+                                        <div class="contentBx">
+                                            <h3>Spacer Insulators <br><span></span></h3>
+                                        </div>
+
+
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="card">
+                                <a href="./StationPostInsulators.html" class="imgBx">
+                                    <img src="img-product/StationPostInsulators.jpg" alt="1">
+
+                                    <div class="content">
+                                        <div class="contentBx">
+                                            <h3>Station Post Insulators<br><span>Post Insulators for High Voltage
+                                                    Substations</span></h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="./susprnsionInsulator.html" class="imgBx">
+                                    <img src="img-product/SuspensionInsulator.jpg" alt="1">
+
+                                    <div class="content">
+                                        <div class="contentBx">
+                                            <h3>Suspension Insulator<br><span>Suspension - Tension Composite Insulators
+                                                    for
+                                                    Overhead Transmission Lines</span></h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <a href="" class="imgBx">
+                                    <img src="img-product/ElectricRailwayInsulators.jpg" alt="1">
+
+                                    <div class="content">
+                                        <div class="contentBx">
+                                            <h3>Electric Railway Insulators <br><span>Electric Railway Insulators for
+                                                    Overhead Catenary Systems</span></h3>
+                                        </div>
+
+
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+
+
+
+
+
                     </div>
-                     <!-- ************* box of products *********** -->
-                     <div class="container">
-        <div class="card">
-            <a href="./LinePostInsulator.html" class="imgBx">
-                <img src="img-product/LinePostInsulator.jpg" alt="1">
-            </a>
-            <div class="content"><div class="contentBx">
-                <h3>Line Post Insulator <br><span>Post Insulators for High Voltage Substations</span></h3>
+                </div>
             </div>
         </div>
-        </div>
-        <div class="card">
-            <a href="" class="imgBx">
-                <img src="img-product/SpacerInsulators.jpg" alt="1">
-            </a>
-            <div class="content"><div class="contentBx">
-                <h3>Spacer Insulators <br><span></span></h3>
-            </div>
-
-          
-        </div>
-        </div>
-
-        <div class="card">
-            <a href="./StationPostInsulators.html" class="imgBx">
-                <img src="img-product/StationPostInsulators.jpg" alt="1">
-            </a>
-            <div class="content"><div class="contentBx">
-                <h3>Station Post Insulators<br><span>Post Insulators for High Voltage Substations</span></h3>
-            </div>
-            </div>
-        </div>
-             <div class="card">
-            <a href="./susprnsionInsulator.html" class="imgBx">
-                <img src="img-product/SuspensionInsulator.jpg" alt="1">
-            </a>
-            <div class="content"><div class="contentBx">
-                <h3>Suspension Insulator<br><span>Suspension - Tension Composite Insulators for Overhead Transmission Lines</span></h3>
-            </div>
-            </div>
-             </div>
-             <div class="card">
-            <a href="" class="imgBx">
-                <img src="img-product/ElectricRailwayInsulators.jpg" alt="1">
-            </a>
-            <div class="content"><div class="contentBx">
-                <h3>Electric Railway Insulators <br><span>Electric Railway Insulators for Overhead Catenary Systems</span></h3>
-            </div>
-
-           
-        </div>
-        </div>
-
-    </div>
-         
-           
-                
-                   
-                   
-                    </div>
+        <div class="description">
+            <div class="container">
+                <div>
+                    Please contact our technical team for further details. Full technical specification details are
+                    available on request. Moreover, we are always available to find a solution for specific clients
+                    .application
                 </div>
             </div>
         </div>
     </main>
     <!-- ######################## FOOTER ############################ -->
-    <footer >
+    <footer>
         <div class="footer">
             <div class="container-fluid">
                 <div class="row">
@@ -206,7 +239,8 @@
                             <h4>contact</h4>
                             <div class="d-flex icon-text">
                                 <i class="fa fa-map-marker"></i>
-                                <div class="text text-light">No.1 , Babolhavaej Dead-End, Sedigh Alley, Gholhak Intersection, Shariaty Street, Tehran, Iran</div>
+                                <div class="text text-light">No.1 , Babolhavaej Dead-End, Sedigh Alley, Gholhak
+                                    Intersection, Shariaty Street, Tehran, Iran</div>
                             </div>
                             <div class="d-flex icon-text">
                                 <i class="fa fa-phone-square"></i>
@@ -260,14 +294,14 @@
             <div class="copyright">
                 <div class="footer-text">ARMAN<span>&#169</span>2021 ALL RESERVED</div>
             </div>
-          </div>
+        </div>
     </footer>
-       
-        <!-- ######################## SCRIPT ############################ -->
-        <script src="lib/jQuery/jquery-3.6.0.min.js"></script>
-        <script src="lib/popper/popper.min.js"></script>
-        <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="script.js"></script>
+
+    <!-- ######################## SCRIPT ############################ -->
+    <script src="lib/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="lib/popper/popper.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

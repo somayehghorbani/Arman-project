@@ -57,55 +57,17 @@ $('#submit').on('click', function validateForm() {
     Message :${document.getElementById('message').value} ;`,
 			document
 		}).then(
-			// (error.innerHTML = 'Message sent')
+			(error.innerHTML = 'Message sent')
 
 			// location.reload()
 		);
-
 	}
-	modal.style.visibility = "visible";
-	modal.style.cursor = "pointer"
 	document.getElementById('name').value = '';
 	document.getElementById('Business').value = '';
 	document.getElementById('email').value = '';
 	document.getElementById('phone').value = '';
 	document.getElementById('message').value = '';
-	document.getElementById('errormessage').innerHTML = '';
 });
-// Get the modal
-var modal = document.getElementById("popup");
-
-// Get the button that opens the modal
-var btn = document.getElementById("submit");
-
-// Get the <span> element that closes the modal
-var spanclose = document.getElementById("spanclose");
-// Get the <span> element that closes the modal
-var buttomclose = document.getElementById("buttomclose");
- 
-
-// When the user clicks on <span> (x), close the modal
-spanclose.onclick = function () {
-	modal.style.visibility = "hidden";
-
-}
-// When the user clicks on buttom, close the modal
-buttomclose.onclick = function () {
-	modal.style.visibility = "hidden";
-
-}
-
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-	if (event.target == modal) {
-		modal.style.visibility = "hidden";
-	}
-}
-
-
-
-
 
 VanillaTilt.init(document.querySelectorAll('.anycard'), {
 	max: 8,

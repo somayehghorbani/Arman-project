@@ -8,7 +8,7 @@
 
 body {
     font-family: "Raleway-Light" !important;
-    text-transform: capitalize;
+    color: black;
 }
 
 .a-link {
@@ -21,6 +21,7 @@ body {
     /* color: #444ac7 !important; */
     /* color: #0056b3 !important; */
 }
+
 
 .btn {
     background-color: #2c3192 !important;
@@ -56,19 +57,19 @@ body {
     transform: translateX(-50%);
 }
 
-.check-box {
-    margin-bottom: 10px;
-    color: white;
-}
+
 
 .checkbox-elements {
     font-size: 20px;
     padding: 10px;
+  
 }
 
 .checkbox-elements .checkbox-text {
     margin-top: -6px;
     padding-left: 10px;
+    color: black;
+    font-weight: bold;
 }
 
 .icon-text {
@@ -145,13 +146,24 @@ header {
 
 .navinner {
     width: 100%;
-    height: auto;
+    height:auto;
     background-color: white;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 10000;
 	box-shadow: 3px 1px 6px 1px lightgrey;
+}
+.navbar-expand-lg .navbar-collapse{
+    justify-content: space-around;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,.5);
+}
+.collapse .nav-item {
+    padding-right: 3.5rem;
 }
 .navbar .navbar-brand img {
     width: 300px;
@@ -188,9 +200,12 @@ header {
     }
   }
 
-
+ 
 .nav-link {
     color: #010608 !important;
+}
+.nav-item:hover a{
+   transform: scale(1.2);
 }
 
 nav ul a:hover,
@@ -208,7 +223,29 @@ nav ul a .active {
 	margin-bottom:30px;
 }
 .section2 .description {
-    font-size: 20px;
+   line-height: 2rem;
+   font-weight: bold;
+
+
+}
+.section2 .description p{
+ position: relative;
+margin: 50px 0;
+padding:30px;
+}
+.section2 .description p::after{
+content: "";
+width: 200px;
+height: 2px;
+background-color: #3740db;
+position: absolute;
+top: 120%;
+left: 50%;
+transform: translateX(-50%);
+
+}
+.section2 .description p:last-child::after{
+height: 0px;
 }
 form #errormessage{
     color:red;

@@ -7,9 +7,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/homePage.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/aboutus.css">
     <!-- icon -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- icon -->
@@ -18,43 +22,44 @@
 
 <body>
     <!-- ######################## header ############################ -->
-    <header >
-       <!-- ************* MENU *********** -->
-<div class="navinner">
-    <nav class="navbar navbar-expand-lg navbar-light p-4"  >
-    <a href="./Home.html" class="navbar-brand">
-        <img src="img/مقره سازی آرمان.jpg" class="header-logo"></img>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div  class=" collapse navbar-collapse text-center" id="collapsibleNavbar">
-        <ul class="navbar-nav" id="myNav">
-            <li class="nav-item ">
-                <a class=" nav-link font-weight-bold" href="./Design.html">Design</a>
-            </li>
-            <li class="nav-item ">
-                <a class=" nav-link font-weight-bold" href="#">Manufacturing</a>
-            </li>
-            <li class="nav-item ">
-                <a class=" nav-link font-weight-bold"  href="./Products.html">Products</a>
-            </li>
-            <li class="nav-item ">
-                <a class="  nav-link font-weight-bold" href="./Catalog.html">Catalogs</a>
-            </li>
-            <li class="nav-item ">
-                <a class=" nav-link font-weight-bold" href="#">Research and development</a>
-            </li>
-            <li class="nav-item ">
-                <a class="active  nav-link font-weight-bold" href="./AboutUs.html">About us</a>
-            </li>
-            <li class="nav-item">
-                <a class=" nav-link font-weight-bold" href="./ContactUs.html">Contact us</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-</div>
+    <header>
+        <!-- ************* MENU *********** -->
+        <div class="navinner">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <a href="./index.html" class="navbar-brand">
+                    <img src="img/withearman.jpg" class="header-logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class=" collapse navbar-collapse text-center" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+
+
+                        <li class="nav-item ">
+                            <a class=" nav-link font-weight-bold" href="./Products.html">Products</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class=" nav-link font-weight-bold" href="./quality.html">Quality</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="  nav-link font-weight-bold" href="./Catalog.html">Catalogs</a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="  nav-link font-weight-bold" href="./AboutUs.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class=" nav-link font-weight-bold" href="./ContactUs.html">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+
+
+
     </header>
     <!-- ######################## BETWEEN TWO SECTION ############################ -->
     <div class="page-info">
@@ -74,12 +79,46 @@
             <div class="mb-5 pt-5 text-sm-center top-part">
                 <div class="row text-center">
                     <div class="left-box col-sm-12 col-md-12 mb-4">
-                        <img src="./img/مقره سازی آرمان.jpg" alt=" ">
-                        <div class="description">Maghareh Sazan Arman (MSA) is one of the most reliable manufacturers of composite insulators in Iran and Middle East. Established in 2013, MSA started to produce various types of composite insulators up to 400 kV. The quality is
-                            our commitment. MSA has built a strong team of highly skilled and well-trained experts. The combination of modern equipment and technologies with the establishment of quality control systems in all the organizational levels
-                            has made us trusted partners of our esteemed clients. Quality control and assurance system covers all the operational activities such as design, raw material supply, production, testing and even after-sales services. Commitment
-                            to consistent quality and reliability drive our systems. Our infrastructure comprises of a state of the art manufacturing plant located in Paytakht industrial zone, near Pakdasht city. Modern equipment adapted to ensure precision
-                            and high quality. Our main asset is the team of qualified professionals and engineers who are geared with the latest knowledge and resources. MSA is ISO 9001, ISO 45001 and ISO 14001 certified.
+                        <img src="./img/withearman.jpg" alt=" ">
+                        <div class="description">
+                            <p>
+                                ARMAN INSULATORS (Maghareh Sazan Arman - MSA) Is One Of The Most Reliable Manufacturers
+                                Of
+                                Composite Insulators In West Asia. ARMAN Group Established In 2003, and Started To
+                                Produce
+                                Various Types Of Composite Insulators Up To 400 KV Level From 2013. In The Past Almost
+                                One
+                                Decade, We Supplied Both The Local Market And Also Start Exporting To The Neighbor
+                                Countries.
+                            </p>
+                            <p> The Quality Is Our Commitment. ARMAN INSULATORS Has Built A Strong Team Of Highly
+                                Skilled
+                                And Well-Trained Experts. Moreover, The ARMAN Laboratory Is Equipped And Audited
+                                Continuously To Give The Best Services To The Factory, Research And Development Team And
+                                The
+                                Clients. The Combination Of Modern Equipment And Technologies With The Establishment Of
+                                Quality Control Systems In All The Organizational Levels Has Made Us Trusted Partners Of
+                                Our
+                                Esteemed Clients.
+                            </p>
+                            <p>
+
+                                Our Infrastructure Comprises A State Of The Art Manufacturing Plant Located In Paytakht
+                                Industrial Zone, in East Of Tehran. Modern Equipment Adapted To Ensure Precision And
+                                High
+                                Quality. Our Main Asset Is The Team Of Qualified Professionals And Engineers Who Are
+                                Geared
+                                With The Latest Knowledge And Resources.
+                            </p>
+                            <p>
+                                Quality Assurance System Covers All The Processes and Operational Activities Such As
+                                Design,
+                                Raw Material Supply, Production, Quality Control, Sales and After-Sales Services.
+                                Moreover,
+                                the system is eager for continuous improvement to simplify products and processes.
+                                Commitment To Consistent Quality And Reliability Drive Our Systems.
+
+                            </p>
                         </div>
                     </div>
                     <!-- <div class="right-box col-sm-6 col-md-6">
@@ -89,157 +128,10 @@
             </div>
         </div>
     </div>
-    <!-- ######################## START SECTION 3 ############################ -->
-    <div class="wrapperInfobg d-flex flex-wrap justify-content-center text-center p-5">
-        <div class="wrapperInfobg-top  p-3">
-            <h2 class="font-weight-bold font-size">PHILOSOPHY</h2>
-            <p class="">ARMAN corporative philosophy is committed to providing:
-            </p>
-        </div>
-        <div class="wrapperInfobg-bottom d-flex flex-wrap justify-content-center text-center ">
 
-            <div class="row col-lg-3 col-md-6 col-sm-12">
-                <div class="col-md-12"><span><i class="far fa-check-circle"></i></span></div>
-                <p class="col-md-12">Quality check points all over the process</p>
-            </div>
-            <div class="row col-lg-3 col-md-6 col-sm-12 ">
-                <div class="col-md-12"><span> <i class="far fa-comments"></i></span></div>
-                <p class="col-md-12">Client-focused service</p>
-            </div>
-            <div class="row col-lg-3 col-md-6 col-sm-12">
-                <div class="col-md-12"><span><i class="fas fa-tv"></i></span></div>
-                <p class="col-md-12">Investment in last technologies</p>
-            </div>
-            <div class="row col-lg-3 col-md-6 col-sm-12">
-                <div class="col-md-12"> <span> <i class="fas fa-chart-pie"></i></span></div>
-                <p class="col-md-12">Personalized developments</p>
-            </div>
-
-        </div>
-    </div>
-    <!-- ######################## START SECTION 4 ############################ -->
-    <div class="wrapperInfo mb-4">
-        <div class="container">
-            <div class=" py-5 text-sm-center text-md-left">
-                <div class="row text-center text-sm-left">
-                    <div class="left-box col-sm-6 col-md-4 mb-4 text-center">
-                        <div class="row pt-4">
-                            <div class="col-md-12"> <span> <i class="fas fa-bullseye"></i></span></div>
-                            <p class="col-md-12 mt-3 font-weight-bold">MISSION</p>
-                        </div>
-                    </div>
-                    <div class="right-box col-sm-6 col-md-8">
-
-                        <p>Give broad coverage both <a href=""> nationally and internationally in the market for
-                                ceramic, polymeric and ceramic electrical insulators</a> .</p>
-                        <p>To do this, we offer our <strong> customers a high quality standard product and
-                                personalized technical </strong> advice for the development of new customized products, giving a comprehensive solution tailored to each of the needs.</p>
-                        <p>this through a highly experienced human team, focused on innovation and technical development to give value to the requests of our customers.></p>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ######################## START SECTION 5 ############################ -->
-    <div class="wrapperInfobg mb-4">
-        <div class="container">
-            <div class=" py-5 text-sm-center text-md-left">
-                <div class="row text-center text-sm-left">
-                    <div class="left-box col-sm-6 col-md-4 mb-4 text-center">
-                        <div class="row pt-4">
-                            <div class="col-md-12"> <span> <i class="fas fa-globe"></i></span></div>
-                            <p class="col-md-12 mt-3 font-weight-bold">VISION</p>
-                        </div>
-                    </div>
-                    <div class="right-box col-sm-6 col-md-8">
-
-                        <p>Give broad coverage both <a href=""> nationally and internationally in the market for
-                                ceramic, polymeric and ceramic electrical insulators</a> .</p>
-                        <p>To do this, we offer our <strong> customers a high quality standard product and
-                                personalized technical </strong> advice for the development of new customized products, giving a comprehensive solution tailored to each of the needs.</p>
-                        <p>this through a highly experienced human team, focused on innovation and technical development to give value to the requests of our customers.></p>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ######################## START SECTION 6 ############################ -->
-    <div class="wrapperInfo mb-4">
-        <div class="container">
-            <div class=" py-5 text-sm-center text-md-left">
-                <div class="row text-center text-sm-left">
-                    <div class="left-box col-sm-6 col-md-4 mb-4 text-center">
-                        <div class="row pt-4">
-                            <div class="col-md-12"> <span> <i class="fas fa-tags"></i></span></div>
-                            <p class="col-md-12 mt-3 font-weight-bold">VALUES</p>
-                        </div>
-                    </div>
-                    <div class="right-box col-sm-6 col-md-8">
-
-                        <p>Give broad coverage both <a href=""> nationally and internationally in the market for
-                                ceramic, polymeric and ceramic electrical insulators</a> .</p>
-                        <p>To do this, we offer our <strong> customers a high quality standard product and
-                                personalized technical </strong> advice for the development of new customized products, giving a comprehensive solution tailored to each of the needs.</p>
-                        <p>this through a highly experienced human team, focused on innovation and technical development to give value to the requests of our customers.></p>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ######################## START SECTION 7 ############################ -->
-    <div class="wrapperInfobg mb-4">
-        <div class="container">
-            <div class=" py-5 text-sm-center text-md-left">
-                <div class="row text-center text-sm-left">
-                    <div class="left-box col-sm-6 col-md-4 mb-4 text-center">
-                        <div class="row pt-4">
-                            <div class="col-md-12"> <span> <i class="fas fa-building"></i></span></div>
-                            <p class="col-md-12 mt-3 font-weight-bold">CSR</p>
-                        </div>
-                    </div>
-                    <div class="right-box col-sm-6 col-md-8">
-
-                        <p>Give broad coverage both <a href=""> nationally and internationally in the market for
-                                ceramic, polymeric and ceramic electrical insulators</a> .</p>
-                        <p>To do this, we offer our <strong> customers a high quality standard product and
-                                personalized technical </strong> advice for the development of new customized products, giving a comprehensive solution tailored to each of the needs.</p>
-                        <p>this through a highly experienced human team, focused on innovation and technical development to give value to the requests of our customers.></p>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ######################## START SECTION 8 ############################ -->
-    <div class="wrapperInfo mb-4">
-        <div class="container">
-            <div class=" py-5 text-sm-center text-md-left">
-                <div class="row text-center text-sm-left">
-                    <div class="left-box col-sm-6 col-md-4 mb-4 text-center">
-                        <div class="row pt-4">
-                            <div class="col-md-12"> <span> <i class="fas fa-globe-americas"></i></span></div>
-                            <p class="col-md-12 mt-3 font-weight-bold">MARKET</p>
-                        </div>
-                    </div>
-                    <div class="right-box col-sm-6 col-md-8">
-
-                        <p>Give broad coverage both <a href=""> nationally and internationally in the market for
-                                ceramic, polymeric and ceramic electrical insulators</a> .</p>
-                        <p>To do this, we offer our <strong> customers a high quality standard product and
-                                personalized technical </strong> advice for the development of new customized products, giving a comprehensive solution tailored to each of the needs.</p>
-                        <p>this through a highly experienced human team, focused on innovation and technical development to give value to the requests of our customers.></p>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- ######################## FOOTER ############################ -->
-    <footer >
+    <footer>
         <div class="footer">
             <div class="container-fluid">
                 <div class="row">
@@ -254,7 +146,8 @@
                             <h4>contact</h4>
                             <div class="d-flex icon-text">
                                 <i class="fa fa-map-marker"></i>
-                                <div class="text text-light">No.1 , Babolhavaej Dead-End, Sedigh Alley, Gholhak Intersection, Shariaty Street, Tehran, Iran</div>
+                                <div class="text text-light">No.1 , Babolhavaej Dead-End, Sedigh Alley, Gholhak
+                                    Intersection, Shariaty Street, Tehran, Iran</div>
                             </div>
                             <div class="d-flex icon-text">
                                 <i class="fa fa-phone-square"></i>
@@ -308,14 +201,14 @@
             <div class="copyright">
                 <div class="footer-text">ARMAN<span>&#169</span>2021 ALL RESERVED</div>
             </div>
-          </div>
+        </div>
     </footer>
 
     <!-- ######################## SCRIPT ############################ -->
-<script src="lib/jQuery/jquery-3.6.0.min.js"></script>
-<script src="lib/popper/popper.min.js"></script>
-<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="script.js"></script>
+    <script src="lib/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="lib/popper/popper.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
